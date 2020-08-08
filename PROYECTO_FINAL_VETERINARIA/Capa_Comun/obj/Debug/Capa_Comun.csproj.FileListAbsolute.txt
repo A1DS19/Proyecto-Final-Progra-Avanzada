@@ -1,0 +1,6 @@
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Capa_Comun\bin\Debug\Capa_Comun.dll
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Capa_Comun\bin\Debug\Capa_Comun.pdb
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Capa_Comun\obj\Debug\Capa_Comun.csprojAssemblyReference.cache
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Capa_Comun\obj\Debug\Capa_Comun.csproj.CoreCompileInputs.cache
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Capa_Comun\obj\Debug\Capa_Comun.dll
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Capa_Comun\obj\Debug\Capa_Comun.pdb
