@@ -8,11 +8,12 @@ using System.Data;
 
 namespace Datos
 {
-   public class ClientesDao : ConnectionSQL
+   public class ProductosDao : ConnectionSQL
     {
         SqlDataReader reader;
         DataTable tabla = new DataTable();
-        public DataTable mostrarMascota()
+
+        public DataTable mostrarProductos()
         {
             using (var connection = GetConnection())
             {
@@ -20,7 +21,8 @@ namespace Datos
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "SELECT * FROM MASCOTAS";
+                    command.CommandText = "listarProductos";
+                    command.CommandType = CommandType.StoredProcedure;
 
                     reader = command.ExecuteReader();
                     tabla.Load(reader);
@@ -31,9 +33,9 @@ namespace Datos
                     return tabla;
                 }
             }
-        }//Fin Listar razas.
+        }//Fin Listar Productos.
 
-        public DataTable MostrarClientes()
+        public DataTable mostrarCategorias()
         {
             using (var connection = GetConnection())
             {
@@ -41,19 +43,20 @@ namespace Datos
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "listarClientes";
-                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandText = "SELECT * FROM CATEGORIAS";
 
                     reader = command.ExecuteReader();
                     tabla.Load(reader);
+                    reader.Close();
 
+                    connection.Close();
 
                     return tabla;
                 }
             }
-        }
+        }//Fin Listar Categorias.
 
-        public void insertarCliente(string cedula, string nombre, string apellido, string telefono, string direccion, string correo, int id_mascota)
+        public void insertarProducto(int id_categoria, string nombre, string desc, int cantidad, float precio)
         {
             using (var connection = GetConnection())
             {
@@ -61,12 +64,28 @@ namespace Datos
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "insert into CLIENTES values('" + cedula + "','" + nombre + "','" + apellido + "','" + telefono + "','" + direccion + "','" + correo +"','" + id_mascota + "')";
+                    command.CommandText = "insert into PRODUCTOS values('" + id_categoria + "','" + nombre + "','" + desc + "','" + cantidad + "','"+ precio+ "')";
 
                     command.CommandType = CommandType.Text;
                     command.ExecuteNonQuery();
                 }
             }
-        }//Fin insertar clientes
+        }//Fin insertar Producto
+
+        public void eliminarProducto(int id_producto)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM PRODUCTOS WHERE ID_PRODUCTO ='" + id_producto + "'";
+
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }//Fin Eliminar Producto
     }
 }

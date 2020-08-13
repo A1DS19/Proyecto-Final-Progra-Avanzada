@@ -44,6 +44,7 @@
     <Compile Include="ClientesModel.cs" />
     <Compile Include="MascotaModel.cs" />
     <Compile Include="PacientesModel.cs" />
+    <Compile Include="ProductosModel.cs" />
     <Compile Include="UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
