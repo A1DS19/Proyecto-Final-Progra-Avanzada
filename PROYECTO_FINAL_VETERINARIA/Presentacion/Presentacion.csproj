@@ -70,6 +70,12 @@
     <Compile Include="mostrarClientes.Designer.cs">
       <DependentUpon>mostrarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostrarMascotaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarMascotaModificar.Designer.cs">
+      <DependentUpon>MostrarMascotaModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="MostrarMascotas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarClientes.resx">
       <DependentUpon>mostrarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarMascotaModificar.resx">
+      <DependentUpon>MostrarMascotaModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MostrarMascotas.resx">
       <DependentUpon>MostrarMascotas.cs</DependentUpon>

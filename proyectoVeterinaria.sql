@@ -154,7 +154,7 @@ values
 
 insert into CATEGORIAS
 values
-(''),
+('NINGUNO'),
 ('Alimentación'),
 ('Arenas'),
 ('Accesorios, Correas, Collares'),

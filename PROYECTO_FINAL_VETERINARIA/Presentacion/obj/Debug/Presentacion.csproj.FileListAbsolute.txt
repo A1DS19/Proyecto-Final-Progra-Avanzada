@@ -22,3 +22,4 @@ C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Presentacion
 C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Presentacion\obj\Debug\Presentacion.MostrarMascotas.resources
 C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Presentacion\obj\Debug\Presentacion.MostrarPacientes.resources
 C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Presentacion\obj\Debug\Presentacion.MostrarProductos.resources
+C:\PROYECTOS U\PROGRA AVANZADA\proyectos\PROYECTO_FINAL_VETERINARIA\Presentacion\obj\Debug\Presentacion.MostrarMascotaModificar.resources

@@ -75,5 +75,16 @@ namespace Presentacion
             this.Close();
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            //Mandar id de producto a MostrarMascotaModifiacar
+            MostrarMascotaModificar mmm = new MostrarMascotaModificar();
+            mmm.ShowDialog();
+        }
     }
 }
